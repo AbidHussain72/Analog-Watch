@@ -1,0 +1,81 @@
+html{
+ font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+ font-size: 10px;
+}
+body{
+ background: linear-gradient(45deg, #ebebeb,#fff6f6);
+ margin: 0;
+ font-size: 2rem;
+ display: flex;
+ flex: 1;
+ min-height: 100vh;
+ align-items: center;
+
+}
+.clock{
+ width: 30rem;
+ height: 30rem;
+ background: #ccc url(./Images/clock.png);
+ border-radius: 50%;
+ margin: 50px auto;
+ position: relative;
+padding: 2rem;
+box-shadow: 0 0 7px #696969;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+z-index: -2;
+border: 5px inset #7c7c7c;
+
+}
+h2{
+ position: absolute;
+ top: 38%;
+ left:20%;
+ z-index: -1;
+}
+.clock-face{
+ position: relative;
+ width: 100%;
+ height: 100%;
+ transform: translateY(-3px);
+}
+.dot{
+ width: 20px;
+ height: 20px;
+ position: relative;
+ background-color: #fda605;
+ border-radius: 50%;
+ top: 47%;
+ left: 47%;
+ z-index: 4;
+}
+.hand{
+ width: 50%;
+ position: absolute;
+ top: 50%;
+ transform-origin: 100%;
+transform: rotate(90deg);
+transition: all 0.05s ease;
+transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+z-index: 2;
+}
+.hour-hand{
+ height: 6px;
+ border-radius: 10px;
+ background-color: #006969;
+
+}
+.min-hand{
+ height: 3px;
+ border-radius: 10px;
+ background-color: #ff0022;
+
+}
+.sec-hand{
+ height: 1.5px;
+ border-radius: 10px;
+ background-color: #ff8800;
+
+}
